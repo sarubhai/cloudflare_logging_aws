@@ -1,0 +1,22 @@
+{
+    "settings": {
+        "number_of_shards": 1,
+        "number_of_replicas": 1
+    },
+    "mappings": {
+        "properties": {
+            "zone_id": { "type": "keyword" },
+            "s3_bucket": { "type": "keyword" },
+            "start_time": { "type": "date", "format": "yyyy-MM-dd HH:mm:ss" },
+            "end_time": { "type": "date", "format": "yyyy-MM-dd HH:mm:ss" },
+            "rate": { "type": "integer" },
+            "status": { "type": "keyword" },
+            "filename": { "type": "keyword" },
+            "s3_log_lines": { "type": "integer" },
+            "elastic_log_lines": { "type": "integer" },
+            "message": { "type": "text" },
+            "created_at": { "type": "date", "format": "yyyy-MM-dd HH:mm:ss" },
+            "updated_at": { "type": "date", "format": "yyyy-MM-dd HH:mm:ss" }
+        }
+    }
+}

@@ -1,0 +1,292 @@
+{
+   "index_patterns": [
+      "cloudflare-*"
+   ],
+   "mappings": {
+      "properties": {
+         "observer.vendor": {
+            "type": "keyword"
+         },
+         "observer.type": {
+            "type": "keyword"
+         },
+         "ecs.version": {
+            "type": "keyword"
+         },
+         "event.dataset": {
+            "type": "keyword"
+         },
+         "cloudflare.waf.flags": {
+            "type": "keyword"
+         },
+         "cloudflare.firewall.matches.actions" : {
+            "type": "keyword"
+         },
+         "cloudflare.firewall.matches.rule_ids" : {
+            "type": "keyword"
+         },
+         "cloudflare.firewall.matches.sources" : {
+            "type": "keyword"
+         },
+         "cloudflare.edge.colo.code" : {
+            "type": "keyword"
+         },
+         "cloudflare.client.ssl.protocol": {
+            "type": "keyword"
+         },
+         "cloudflare.client.request.protocol" : {
+            "type": "keyword"
+         },
+         "cloudflare.waf.rule.id": {
+            "type": "keyword"
+         },
+         "cloudflare.edge.colo.id": {
+            "type": "integer"
+         },
+         "cloudflare.origin.response.time": {
+            "type": "long"
+         },
+         "cloudflare.origin.ip": {
+            "type": "ip"
+         },
+         "@version": {
+            "type": "keyword"
+         },
+         "cloudflare.cache.status": {
+            "type": "keyword"
+         },
+         "cloudflare.edge.server.ip": {
+            "type": "ip"
+         },
+         "observer.ip": {
+            "type": "ip"
+         },
+         "cloudflare.waf.matched_var": {
+            "type": "keyword"
+         },
+         "cloudflare.waf.action": {
+            "type": "keyword"
+         },
+         "cloudflare.edge.pathing.status": {
+            "type": "keyword"
+         },
+         "source.as.number": {
+            "type": "long"
+         },
+         "cloudflare.edge.rate.limit.id": {
+            "type": "long"
+         },
+         "user_agent.original": {
+            "type": "keyword"
+         },
+         "user_agent.device.name": {
+            "type": "keyword"
+         },
+         "user_agent.name": {
+            "type": "keyword"
+         },
+         "user_agent.os.full": {
+            "type": "keyword"
+         },
+         "user_agent.os.kernel": {
+            "type": "keyword"
+         },
+         "user_agent.os.platform": {
+            "type": "keyword"
+         },
+         "user_agent.os.name": {
+            "type": "keyword"
+         },
+         "user_agent.os.version": {
+            "type": "keyword"
+         },
+         "user_agent.version": {
+            "type": "keyword"
+         },
+         "user_agent.major": {
+            "type": "keyword"
+         },
+         "user_agent.minor": {
+            "type": "keyword"
+         },
+         "user_agent.patch": {
+            "type": "keyword"
+         },
+         "user_agent.build": {
+            "type": "keyword"
+         },
+         "user_agent.os_name": {
+            "type": "keyword"
+         },
+         "user_agent.os_major": {
+            "type": "keyword"
+         },
+         "user_agent.os_minor": {
+            "type": "keyword"
+         },
+         "cloudflare.edge.response.compression_ratio": {
+            "type": "float"
+         },
+         "cloudflare.parent.ray_id": {
+            "type": "keyword"
+         },
+         "http.request.referrer": {
+            "type": "keyword"
+         },
+         "cloudflare.cache.tiered.fill": {
+            "type": "boolean"
+         },
+         "cloudflare.ray_id": {
+            "type": "keyword"
+         },
+         "cloudflare.client.ip.class": {
+            "type": "keyword"
+         },
+         "http.version": {
+            "type": "keyword"
+         },
+         "cloudflare.edge.request.host": {
+            "type": "keyword"
+         },
+         "cloudflare.cache.response.bytes": {
+            "type": "long"
+         },
+         "http.response.bytes": {
+            "type": "long"
+         },
+         "cloudflare.device.type": {
+            "type": "keyword"
+         },
+         "cloudflare.edge.rate.limit.action": {
+            "type": "keyword"
+         },
+         "cloudflare.edge.end.timestamp": {
+            "type": "date"
+         },
+         "event.end": {
+            "type": "date"
+         },
+         "cloudflare.origin.response.http.expires": {
+            "type": "date",
+            "format": "E, d MMM uuuu HH:mm:ss 'UTC'"
+         },
+         "cloudflare.edge.response.status": {
+            "type": "long"
+         },
+         "http.request.bytes": {
+            "type": "long"
+         },
+         "cloudflare.cache.response.status": {
+            "type": "long"
+         },
+         "http.response.status_code": {
+            "type": "long"
+         },
+         "url.domain": {
+            "type": "keyword"
+         },
+         "cloudflare.origin.ssl.protocol": {
+            "type": "keyword"
+         },
+         "url.full": {
+            "type": "keyword"
+         },
+         "cloudflare.origin.response.bytes": {
+            "type": "long"
+         },
+         "cloudflare.worker.cpu_time": {
+            "type": "long"
+         },
+         "cloudflare.origin.response.http.last_modified": {
+            "type": "date",
+            "ignore_malformed": true
+         },
+         "cloudflare.edge.start.timestamp": {
+            "type": "date"
+         },
+         "event.start": {
+            "type": "date"
+         },
+         "cloudflare.edge.pathing.src": {
+            "type": "keyword"
+         },
+         "cloudflare.waf.profile": {
+            "type": "keyword"
+         },
+         "cloudflare.edge.pathing.op": {
+            "type": "keyword"
+         },
+         "cloudflare.security_level": {
+            "type": "keyword"
+         },
+         "cloudflare.waf.rule.message": {
+            "type": "keyword"
+         },
+         "cloudflare.http.response.status_code": {
+            "type": "long"
+         },
+         "@timestamp": {
+            "type": "date"
+         },
+         "server.ip": {
+            "type": "ip"
+         },
+         "destination.ip": {
+            "type": "ip"
+         },
+         "http.request.method": {
+            "type": "keyword"
+         },
+         "cloudflare.zone_id": {
+            "type": "integer"
+         },
+         "source.port": {
+            "type": "long"
+         },
+         "source.address" : {
+            "type" : "keyword"
+         },
+         "source.ip" : {
+            "type" : "ip"
+         },
+         "client.port": {
+            "type": "long"
+         },
+         "client.ip" : {
+            "type" : "ip"
+         },
+         "client.address": {
+            "type" : "keyword"
+         },
+         "cloudflare.worker.subrequest": {
+            "type": "boolean"
+         },
+         "cloudflare.worker.subrequest_count": {
+            "type": "long"
+         },
+         "cloudflare.worker.status": {
+            "type": "keyword"
+         },
+         "cloudflare.edge.response.content_type": {
+            "type": "keyword"
+         },
+         "cloudflare.client.ssl.cipher": {
+            "type": "keyword"
+         },
+         "cloudflare.edge.response.bytes": {
+            "type": "long"
+         },
+         "url.path": {
+            "type": "keyword"
+         }
+      }
+   },
+   "settings": {
+      "index": {
+         "number_of_shards": "1",
+         "number_of_replicas": "1",
+         "mapping.ignore_malformed": true
+      }
+   }
+}
+ 

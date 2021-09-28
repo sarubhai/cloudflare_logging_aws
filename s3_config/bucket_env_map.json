@@ -1,0 +1,5 @@
+{
+    "cloudflare-saurav-logs-zone1" : "prod",
+    "cloudflare-saurav-logs-zone2" : "prod",
+    "cloudflare-saurav-logs-zone3" : "uat"
+}
